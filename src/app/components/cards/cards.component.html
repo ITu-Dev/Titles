@@ -1,0 +1,8 @@
+
+<mat-grid-list cols="3" rowHeight="450px">
+  <mat-grid-tile *ngFor="let title of titles | slice:currentCardsIndex[0]:currentCardsIndex[1]">
+    <app-card [title]="title"></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+

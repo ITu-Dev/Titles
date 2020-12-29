@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-header>
+    <a href="{{title.sourceUrl}}" target="_blank" >
+      <mat-card-title>
+        {{title.title}}
+      </mat-card-title>
+    </a>
+  </mat-card-header>
+  <img mat-card-image *ngIf="title.content[0]" src="{{title.content[0].url}}" alt="">
+  <mat-card-content>
+   {{title.description}}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>DISLIKE</button>
+  </mat-card-actions>
+</mat-card>

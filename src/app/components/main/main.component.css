@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.side-menu{
+  display: flex;
+  flex-direction: row;
+
+  width: 80%;
+
+  justify-content: space-between;
+  margin-left: 7.35%;
+  margin-top: 2%;
+}
+mat-divider{
+  width: 90%;
+  margin-left: 5.5%;
+  margin-bottom: 3%;
+}

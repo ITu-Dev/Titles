@@ -1,0 +1,47 @@
+mat-card{
+  width: 270px;
+  height: 410px;
+}
+mat-card-title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  max-height: 2.5em;
+  line-height: 1.25em;
+}
+mat-card-content{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  max-height: 3.5em;
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+mat-card-actions{
+  position: absolute;
+  top: 390px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:before{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 150px;
+  left: 0;
+  content: "";
+}
+/*
+display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  max-height: 2.5em;
+  font-size: 15px;
+*/

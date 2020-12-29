@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Регистрация</mat-card-title>
+  </mat-card-header>
+  <mat-card-actions>
+    <form>
+      <mat-form-field appearance="outline" [color]="colorControl.value"
+                      [hideRequiredMarker]="hideRequiredControl.value"
+                      [floatLabel]="floatLabelControl.value">
+        <mat-label>Логин</mat-label>
+        <input matInput  [(ngModel)]="login" name="email-field">
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" [color]="colorControl.value"
+                      [hideRequiredMarker]="hideRequiredControl.value"
+                      [floatLabel]="floatLabelControl.value">
+        <mat-label>Пароль</mat-label>
+        <input matInput  [(ngModel)]="password" name="password-field">
+      </mat-form-field>
+
+    </form>
+    <button mat-raised-button  type="submit" (click)="registration()">Зарегестрироваться</button>
+  </mat-card-actions>
+</mat-card>
+
