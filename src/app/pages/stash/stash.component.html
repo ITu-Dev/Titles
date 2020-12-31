@@ -1,16 +1,10 @@
-<!--<app-card [title]="titles$"></app-card>
-<div *ngFor="let title of titles$ | async">
-  <p>{{title.id}}</p>
-  <p>{{title.title}}</p>
-</div> -->
-
-  <app-cards [currentCardsIndex]="currentCardsIndex" [titles]="titles$ | async"></app-cards>
+<app-cards [currentCardsIndex]="currentCardsIndex" [titles]="titlesStash"></app-cards>
 
 <div class="nav-button-container">
   <button mat-icon-button class="nav-button" [disabled]="toggleDisable(currentCardsIndex)" (click)="previousButton(currentCardsIndex)">
     <mat-icon>keyboard_arrow_left</mat-icon>
   </button>
-  <span>Main</span>
+  <span>Stash</span>
   <button  mat-icon-button class="nav-button" (click)="nextButton(currentCardsIndex)">
     <mat-icon>keyboard_arrow_right</mat-icon>
   </button>

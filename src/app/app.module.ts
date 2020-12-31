@@ -14,6 +14,8 @@ import { TestRoutComponent } from './test-rout/test-rout.component';
 import {MainPageModule} from './pages/main-page/main-page.module';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthGuard} from './Guards/auth.guard';
+import {StashModule} from './pages/stash/stash.module';
+
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import {AuthGuard} from './Guards/auth.guard';
     AuthorizationModule,
     MainPageModule,
     ComponentsModule,
-    HttpClientModule
+    HttpClientModule,
+    StashModule,
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

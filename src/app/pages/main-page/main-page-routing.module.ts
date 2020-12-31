@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {MainPageComponent} from './main-page.component';
 import {MainComponent} from '../../components/main/main.component';
 import {AuthGuard} from '../../Guards/auth.guard';
+import {StashComponent} from '../stash/stash.component';
 
 const Routs: Routes = [
   {path: 'main', component: MainComponent,
@@ -10,7 +11,8 @@ const Routs: Routes = [
     // canActivateChild: [AuthGuard],
     children: [
       {path: '', redirectTo: 'MainPage', pathMatch: 'full'},
-      {path: 'MainPage', component: MainPageComponent}
+      {path: 'MainPage', component: MainPageComponent},
+      {path: 'StashPage', component: StashComponent}
     ]}
 ];
 

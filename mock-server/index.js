@@ -68,10 +68,11 @@ app.post("/reg", jsonParser,(req, res) => {
 
 });
 
-app.get("/titles", (req, res, next) => {
-  const title = require('./assets/jsons/title-example.json');
+app.get("/titles", jsonParser ,(req, res, next) => {
+  //const title = require('./assets/jsons/title-example.json');
+  const titles = JSON.parse(fs.readFileSync('./assets/jsons/title-example.json', "utf8"));
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.json(title);
+  res.send(titles);
 });
 
 app.listen(3000, () => {
